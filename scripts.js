@@ -25,3 +25,14 @@ function land(){
     height.innerHTML = 0
 }
 
+function abort(){
+    let response = confirm ("Confirm that you want to abort the mission.");
+    if(response){
+        let p = document.getElementById("flightStatus");
+        p.innerHTML = "Mission aborted.";
+        let div = document.getElementById("shuttleBackground");
+        div.style.backgroundColor = "green";
+        let height = document.getElementById("spaceShuttleHeight")
+        height.innerHTML = 0
+    }
+}
