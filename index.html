@@ -4,12 +4,6 @@
         <title>Flight Simulator</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
         <script src = "scripts.js"></script>
-        <script>
-            window.addEventListener("load", function() {
-                console.log('window loaded');
-            })
-        </script>
-
     </head>
     <body>
         <div class="centered">
@@ -26,21 +20,21 @@
                 <p>Houston, we are ready when you are!</p>
             </div>
             <div id = "shuttleBackground">
-                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
+                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket" style = "position: absolute; bottom: 0; left:calc(50% - 38px)">
             </div>
             <div class="center-block">
-                <button id="up">Up</button>
-                <button id="down">Down</button>
-                <button id="right">Right</button>
-                <button id="left">Left</button>
+                <button id="up" disabled = true>Up</button>
+                <button id="down" disabled = true>Down</button>
+                <button id="right" disabled = true>Right</button>
+                <button id="left" disabled = true>Left</button>
                 <h3>Space Shuttle Height</h3>
                 <p id="spaceShuttleHeight">0</p><span> miles</span>
             </div>
         </div>
         <div class="centered">
-            <button id = "takeoff" onclick="takeOff()">Take off</button>
-            <button id = "landing" onclick="land()">Land</button>
-            <button id = "missionAbort" onclick="abort()">Abort Mission</button>
+            <button id = "takeoff">Take off</button>
+            <button id = "landing">Land</button>
+            <button id = "missionAbort"">Abort Mission</button>
         </div>
     </body>
 </html>
